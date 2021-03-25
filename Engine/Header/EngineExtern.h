@@ -1,1 +1,0 @@
-//extern HWND g_hWnd;
