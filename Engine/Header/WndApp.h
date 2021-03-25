@@ -66,7 +66,7 @@ private:
 	GETTOR_SETTOR	(_int,				m_wndWidth,			0,						WndWidth)
 	GETTOR_SETTOR	(_int,				m_wndHeight,		0,						WndHeight)
 
-	GETTOR_SETTOR	(EDisplayMdoe,		m_displayMode,		EDisplayMdoe::FullMode,	DisplayMode)
+	GETTOR_SETTOR	(EDisplayMdoe,		m_displayMode,		EDisplayMdoe::WinMode,	DisplayMode)
 };
 END
 

@@ -7,6 +7,9 @@
 
 #include "MainFrm.h"
 #include "EditorView.h"
+#include "Inspector.h"
+#include "Hierarchy.h"
+#include "Project.h"
 #include "ShaderView.h"
 #include "ObjectListView.h"
 
@@ -85,28 +88,39 @@ void CMainFrame::Dump(CDumpContext& dc) const
 
 BOOL CMainFrame::OnCreateClient(LPCREATESTRUCT lpcs, CCreateContext* pContext)
 {
-	CRect rect;
-	CPoint pos;
+	Gdiplus::GdiplusStartupInput gdiplusStartupInput;
+	Gdiplus::GdiplusStartup(&m_gdiplusToken, &gdiplusStartupInput, NULL);
 
-	GetClientRect(&rect);
-	pos.x = GetSystemMetrics(SM_CXSCREEN) / 2.0f - rect.Width() / 2.0f;
-	pos.y = GetSystemMetrics(SM_CYSCREEN) / 2.0f - rect.Height() / 2.0f;;
+	RECT rcMainRect = {};
+	GetWindowRect(&rcMainRect);
 
-	SetWindowPos(NULL, pos.x, pos.y, 0, 0, SWP_NOSIZE);
+	::SetRect(&rcMainRect, 0, 0, rcMainRect.right - rcMainRect.left, rcMainRect.bottom - rcMainRect.top);
 
-	/*
-	
-	0, 0 | 0, 1
-	1, 0 | 1, 1
+	RECT rcView = {};
+	GetClientRect(&rcView);
+	int iGapX = rcMainRect.right - rcView.left;
+	int iGapY = rcMainRect.bottom - rcView.top;
+
+    SetWindowPos(nullptr,//순서를 바꿔서 생성하지 않겠다. nullptr을 넣어주게 되면. 
+		0, 0, VIEWCX + 850, VIEWCY , SWP_NOZORDER | SWP_NOMOVE);
+
+	/*	
+	0, 0 | 0, 1 | 0, 2
+	1, 0 | 1, 1 | 1, 2
 
 	*/
 
 	m_mainSplitter.CreateStatic(this, 1, 2);
 	m_mainSplitter.CreateView(0, 0, RUNTIME_CLASS(CEditorView), CSize(VIEWCX, VIEWCY), pContext);
 
-	m_uiSplitter.CreateStatic(&m_mainSplitter, 2, 1, WS_VISIBLE | WS_CHILD, m_mainSplitter.IdFromRowCol(0, 1));
-	m_uiSplitter.CreateView(0, 0, RUNTIME_CLASS(CObjectListView), CSize(150, 300), pContext);
-	m_uiSplitter.CreateView(1, 0, RUNTIME_CLASS(CShaderView), CSize(150, 760), pContext);
+	m_FirstSplitter.CreateStatic(&m_mainSplitter, 1, 2, WS_VISIBLE | WS_CHILD, m_mainSplitter.IdFromRowCol(0, 1));
+	m_FirstSplitter.CreateView(0, 0, RUNTIME_CLASS(CHierarchy), CSize(400, 300), pContext);
+	m_FirstSplitter.CreateView(0, 1, RUNTIME_CLASS(CInspector), CSize(400, 300), pContext);
+	m_FirstSplitter.SetColumnInfo(1, 300, 10);
+
+
+
+
 
 	return TRUE;
 }

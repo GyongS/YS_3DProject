@@ -10,6 +10,7 @@ CSubComponent::CSubComponent() : CComponent(false)
 
 CSubComponent::~CSubComponent()
 {
+	int i = 0;
 }
 
 void CSubComponent::Awake(void)

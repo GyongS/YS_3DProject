@@ -25,11 +25,29 @@
     <Filter Include="97.MainEditor">
       <UniqueIdentifier>{a1a5d567-f7c8-4d5f-a0bc-8eb9a7738304}</UniqueIdentifier>
     </Filter>
-    <Filter Include="01.EditorView\00.ObjectListView">
+    <Filter Include="01.EditorView\00.Inspector">
       <UniqueIdentifier>{161ed24d-fdb6-42c9-bcfe-70b91c1b2d0e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="01.EditorView\01.ShaderView">
+    <Filter Include="01.EditorView\01.Hierarchy">
       <UniqueIdentifier>{dddd97b2-0774-44dd-a649-be6c17f8d3a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.EditorView\02.Project">
+      <UniqueIdentifier>{a70df592-de4d-4ca5-ab2a-eb74488476f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="96.ButtonSkin">
+      <UniqueIdentifier>{306216cd-ec9a-48c2-b4a5-02417fc5f311}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.EditorView\00.Inspector\00.Map">
+      <UniqueIdentifier>{edb64ef4-d9da-427a-9192-c67de28a6a52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.EditorView\00.Inspector\01.Mesh">
+      <UniqueIdentifier>{0d40b7d0-8c02-44b0-911e-8133289b9cac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.EditorView\00.Inspector\02.Physics">
+      <UniqueIdentifier>{74eec2bd-8bd8-4926-9e08-3c4c788fa602}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.EditorView\00.Inspector\03.Effect">
+      <UniqueIdentifier>{d62221b6-633b-4642-a9dd-8b1528bc66d2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -67,7 +85,7 @@
       <Filter>98.Include</Filter>
     </ClInclude>
     <ClInclude Include="..\Header\ShaderView.h">
-      <Filter>01.EditorView\01.ShaderView</Filter>
+      <Filter>01.EditorView\01.Hierarchy</Filter>
     </ClInclude>
     <ClInclude Include="..\Header\EditorStruct.h">
       <Filter>98.Include</Filter>
@@ -82,7 +100,22 @@
       <Filter>98.Include</Filter>
     </ClInclude>
     <ClInclude Include="ObjectListView.h">
-      <Filter>01.EditorView\00.ObjectListView</Filter>
+      <Filter>01.EditorView\00.Inspector</Filter>
+    </ClInclude>
+    <ClInclude Include="Inspector.h">
+      <Filter>01.EditorView\00.Inspector</Filter>
+    </ClInclude>
+    <ClInclude Include="Hierarchy.h">
+      <Filter>01.EditorView\01.Hierarchy</Filter>
+    </ClInclude>
+    <ClInclude Include="Project.h">
+      <Filter>01.EditorView\02.Project</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonSkin.h">
+      <Filter>96.ButtonSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="MapView.h">
+      <Filter>01.EditorView\00.Inspector\00.Map</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -108,13 +141,28 @@
       <Filter>97.MainEditor</Filter>
     </ClCompile>
     <ClCompile Include="..\Code\ShaderView.cpp">
-      <Filter>01.EditorView\01.ShaderView</Filter>
+      <Filter>01.EditorView\01.Hierarchy</Filter>
     </ClCompile>
     <ClCompile Include="EditorScene.cpp">
       <Filter>04.Scene</Filter>
     </ClCompile>
     <ClCompile Include="ObjectListView.cpp">
-      <Filter>01.EditorView\00.ObjectListView</Filter>
+      <Filter>01.EditorView\00.Inspector</Filter>
+    </ClCompile>
+    <ClCompile Include="Inspector.cpp">
+      <Filter>01.EditorView\00.Inspector</Filter>
+    </ClCompile>
+    <ClCompile Include="Hierarchy.cpp">
+      <Filter>01.EditorView\01.Hierarchy</Filter>
+    </ClCompile>
+    <ClCompile Include="Project.cpp">
+      <Filter>01.EditorView\02.Project</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonSkin.cpp">
+      <Filter>96.ButtonSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="MapView.cpp">
+      <Filter>01.EditorView\00.Inspector\00.Map</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -2,12 +2,18 @@
 // Microsoft Visual C++에서 생성한 포함 파일입니다.
 // Editor.rc에서 사용되고 있습니다.
 //
+#define IDCANCEL                        2
 #define IDD_ABOUTBOX                    100
 #define IDP_OLE_INIT_FAILED             100
 #define IDR_MAINFRAME                   128
 #define IDR_EditorTYPE                  130
 #define IDD_OBJECTLISTVIEW              310
 #define IDD_SHADERVIEW                  311
+#define IDD_INSPECTOR                   312
+#define IDD_HIERARCHY                   313
+#define IDD_PROJECT                     314
+#define IDD_MAPVIEW                     316
+#define IDD_MAINDLG                     317
 #define IDC_LIST1                       1000
 #define IDC_BUTTON1                     1001
 #define IDC_BUTTON2                     1002
@@ -25,6 +31,8 @@
 #define IDC_EDIT2                       1015
 #define IDC_EDIT3                       1016
 #define IDC_EDIT4                       1017
+#define IDC_EDIT14                      1018
+#define IDC_EDIT15                      1019
 #define IDC_EDIT5                       1020
 #define IDC_EDIT6                       1021
 #define IDC_EDIT7                       1022
@@ -35,14 +43,15 @@
 #define IDC_EDIT12                      1027
 #define IDC_EDIT13                      1028
 #define IDC_RADIO5                      1031
+#define IDC_LIST2                       1038
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        313
+#define _APS_NEXT_RESOURCE_VALUE        319
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1032
-#define _APS_NEXT_SYMED_VALUE           312
+#define _APS_NEXT_CONTROL_VALUE         1079
+#define _APS_NEXT_SYMED_VALUE           318
 #endif
 #endif

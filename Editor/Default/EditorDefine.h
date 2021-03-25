@@ -1,2 +1,2 @@
-#define VIEWCX 1280
-#define VIEWCY 760
+#define VIEWCX 800
+#define VIEWCY 600

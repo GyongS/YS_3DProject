@@ -14,7 +14,9 @@ protected: // serialization에서만 만들어집니다.
 // 특성입니다.
 public:
 	CSplitterWnd m_mainSplitter;
-	CSplitterWnd m_uiSplitter;
+	CSplitterWnd m_FirstSplitter;
+	CSplitterWnd m_SecondSplitter;
+	ULONG_PTR m_gdiplusToken;
 
 // 작업입니다.
 public:

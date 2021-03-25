@@ -84,7 +84,7 @@ void CShaderView::OnBnClickedButtonCoord()
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
 	CMainFrame * pMain = dynamic_cast<CMainFrame*>(::AfxGetApp()->GetMainWnd());
 	CEditorView* pEditorView = dynamic_cast<CEditorView*>(pMain->m_mainSplitter.GetPane(0, 0));
-	CObjectListView* pListView = dynamic_cast<CObjectListView*>(pMain->m_uiSplitter.GetPane(0, 0));
+	CObjectListView* pListView = dynamic_cast<CObjectListView*>(pMain->m_FirstSplitter.GetPane(0, 0));
 
 	if (!pEditorView->m_curSelectedObject)
 		return;
@@ -123,7 +123,7 @@ void CShaderView::OnBnClickedButtonRotation()
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
 	CMainFrame * pMain = dynamic_cast<CMainFrame*>(::AfxGetApp()->GetMainWnd());
 	CEditorView* pEditorView = dynamic_cast<CEditorView*>(pMain->m_mainSplitter.GetPane(0, 0));
-	CObjectListView* pListView = dynamic_cast<CObjectListView*>(pMain->m_uiSplitter.GetPane(0, 0));
+	CObjectListView* pListView = dynamic_cast<CObjectListView*>(pMain->m_FirstSplitter.GetPane(0, 0));
 
 	if (!pEditorView->m_curSelectedObject)
 		return;
@@ -162,7 +162,7 @@ void CShaderView::OnBnClickedButtonScale()
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
 	CMainFrame * pMain = dynamic_cast<CMainFrame*>(::AfxGetApp()->GetMainWnd());
 	CEditorView* pEditorView = dynamic_cast<CEditorView*>(pMain->m_mainSplitter.GetPane(0, 0));
-	CObjectListView* pListView = dynamic_cast<CObjectListView*>(pMain->m_uiSplitter.GetPane(0, 0));
+	CObjectListView* pListView = dynamic_cast<CObjectListView*>(pMain->m_FirstSplitter.GetPane(0, 0));
 
 	if (!pEditorView->m_curSelectedObject)
 		return;

@@ -99,6 +99,7 @@ _uint CGraphicsComponent::PostRender(void)
 
 void CGraphicsComponent::OnDestroy(void)
 {
+
 }
 
 void CGraphicsComponent::OnEnable(void)

@@ -90,6 +90,7 @@ _uint CRigidBodyComponent::LateUpdate(SHARED(CComponent) spThis)
 
 void CRigidBodyComponent::OnDestroy(void)
 {
+
 }
 
 void CRigidBodyComponent::OnEnable(void)

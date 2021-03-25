@@ -195,15 +195,20 @@
     <ClInclude Include="..\Header\EditorStruct.h" />
     <ClInclude Include="..\Header\EditorTypedef.h" />
     <ClInclude Include="..\Header\ShaderView.h" />
+    <ClInclude Include="ButtonSkin.h" />
     <ClInclude Include="EditorDefine.h" />
     <ClInclude Include="Editor.h" />
     <ClInclude Include="EditorDoc.h" />
     <ClInclude Include="EditorExtern.h" />
     <ClInclude Include="EditorScene.h" />
     <ClInclude Include="EditorView.h" />
+    <ClInclude Include="Hierarchy.h" />
+    <ClInclude Include="Inspector.h" />
     <ClInclude Include="MainEditor.h" />
     <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MapView.h" />
     <ClInclude Include="ObjectListView.h" />
+    <ClInclude Include="Project.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -211,13 +216,18 @@
   <ItemGroup>
     <ClCompile Include="..\Code\CubeComponent.cpp" />
     <ClCompile Include="..\Code\ShaderView.cpp" />
+    <ClCompile Include="ButtonSkin.cpp" />
     <ClCompile Include="Editor.cpp" />
     <ClCompile Include="EditorDoc.cpp" />
     <ClCompile Include="EditorScene.cpp" />
     <ClCompile Include="EditorView.cpp" />
+    <ClCompile Include="Hierarchy.cpp" />
+    <ClCompile Include="Inspector.cpp" />
     <ClCompile Include="MainEditor.cpp" />
     <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MapView.cpp" />
     <ClCompile Include="ObjectListView.cpp" />
+    <ClCompile Include="Project.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
