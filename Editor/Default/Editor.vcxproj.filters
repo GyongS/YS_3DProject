@@ -31,9 +31,6 @@
     <Filter Include="01.EditorView\01.Hierarchy">
       <UniqueIdentifier>{dddd97b2-0774-44dd-a649-be6c17f8d3a1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="01.EditorView\02.Project">
-      <UniqueIdentifier>{a70df592-de4d-4ca5-ab2a-eb74488476f1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="96.ButtonSkin">
       <UniqueIdentifier>{306216cd-ec9a-48c2-b4a5-02417fc5f311}</UniqueIdentifier>
     </Filter>
@@ -108,14 +105,20 @@
     <ClInclude Include="Hierarchy.h">
       <Filter>01.EditorView\01.Hierarchy</Filter>
     </ClInclude>
-    <ClInclude Include="Project.h">
-      <Filter>01.EditorView\02.Project</Filter>
-    </ClInclude>
     <ClInclude Include="ButtonSkin.h">
       <Filter>96.ButtonSkin</Filter>
     </ClInclude>
     <ClInclude Include="MapView.h">
       <Filter>01.EditorView\00.Inspector\00.Map</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshView.h">
+      <Filter>01.EditorView\00.Inspector\01.Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsView.h">
+      <Filter>01.EditorView\00.Inspector\02.Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectView.h">
+      <Filter>01.EditorView\00.Inspector\03.Effect</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -155,14 +158,20 @@
     <ClCompile Include="Hierarchy.cpp">
       <Filter>01.EditorView\01.Hierarchy</Filter>
     </ClCompile>
-    <ClCompile Include="Project.cpp">
-      <Filter>01.EditorView\02.Project</Filter>
-    </ClCompile>
     <ClCompile Include="ButtonSkin.cpp">
       <Filter>96.ButtonSkin</Filter>
     </ClCompile>
     <ClCompile Include="MapView.cpp">
       <Filter>01.EditorView\00.Inspector\00.Map</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshView.cpp">
+      <Filter>01.EditorView\00.Inspector\01.Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsView.cpp">
+      <Filter>01.EditorView\00.Inspector\02.Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectView.cpp">
+      <Filter>01.EditorView\00.Inspector\03.Effect</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

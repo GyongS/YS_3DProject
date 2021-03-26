@@ -2,19 +2,19 @@
 
 
 
-// CMapView Æû ºäÀÔ´Ï´Ù.
+// CEffectView Æû ºäÀÔ´Ï´Ù.
 
-class CMapView : public CFormView
+class CEffectView : public CFormView
 {
-	DECLARE_DYNCREATE(CMapView)
+	DECLARE_DYNCREATE(CEffectView)
 
 public:
-	CMapView();           
-	virtual ~CMapView();
+	CEffectView();          
+	virtual ~CEffectView();
 
 public:
 #ifdef AFX_DESIGN_TIME
-	enum { IDD = IDD_MAPVIEW };
+	enum { IDD = IDD_EFFECTVIEW };
 #endif
 #ifdef _DEBUG
 	virtual void AssertValid() const;
@@ -28,8 +28,8 @@ protected:
 
 	DECLARE_MESSAGE_MAP()
 public:
-	virtual BOOL Create(LPCTSTR lpszClassName, LPCTSTR lpszWindowName, DWORD dwStyle, const RECT& rect, CWnd* pParentWnd, UINT nID, CCreateContext* pContext = NULL);
 	virtual void OnInitialUpdate();
+	virtual BOOL Create(LPCTSTR lpszClassName, LPCTSTR lpszWindowName, DWORD dwStyle, const RECT& rect, CWnd* pParentWnd, UINT nID, CCreateContext* pContext = NULL);
 };
 
 

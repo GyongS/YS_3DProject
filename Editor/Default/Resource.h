@@ -11,9 +11,11 @@
 #define IDD_SHADERVIEW                  311
 #define IDD_INSPECTOR                   312
 #define IDD_HIERARCHY                   313
-#define IDD_PROJECT                     314
 #define IDD_MAPVIEW                     316
 #define IDD_MAINDLG                     317
+#define IDD_MESHVIEW                    318
+#define IDD_PHYSICSVIEW                 319
+#define IDD_EFFECTVIEW                  320
 #define IDC_LIST1                       1000
 #define IDC_BUTTON1                     1001
 #define IDC_BUTTON2                     1002
@@ -44,14 +46,18 @@
 #define IDC_EDIT13                      1028
 #define IDC_RADIO5                      1031
 #define IDC_LIST2                       1038
+#define IDC_MFCBUTTON1                  1080
+#define IDC_MFCBUTTON2                  1081
+#define IDC_MFCBUTTON3                  1082
+#define IDC_MFCBUTTON4                  1083
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        319
+#define _APS_NEXT_RESOURCE_VALUE        323
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1079
-#define _APS_NEXT_SYMED_VALUE           318
+#define _APS_NEXT_CONTROL_VALUE         1081
+#define _APS_NEXT_SYMED_VALUE           321
 #endif
 #endif
