@@ -50,6 +50,15 @@
 #define IDC_MFCBUTTON2                  1081
 #define IDC_MFCBUTTON3                  1082
 #define IDC_MFCBUTTON4                  1083
+#define IDC_SPIN2                       1093
+#define IDC_SPIN3                       1094
+#define IDC_SPIN4                       1095
+#define IDC_SPIN5                       1096
+#define IDC_SPIN6                       1097
+#define IDC_SPIN7                       1098
+#define IDC_SPIN8                       1099
+#define IDC_SPIN9                       1100
+#define IDC_SPIN10                      1101
 
 // Next default values for new objects
 // 
@@ -57,7 +66,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        323
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1081
+#define _APS_NEXT_CONTROL_VALUE         1094
 #define _APS_NEXT_SYMED_VALUE           321
 #endif
 #endif
