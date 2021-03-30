@@ -25,9 +25,17 @@ CMapView::~CMapView()
 void CMapView::DoDataExchange(CDataExchange* pDX)
 {
 	CFormView::DoDataExchange(pDX);
+	DDX_Control(pDX, IDC_MFCBUTTON1, m_btn_Reset);
+}
+
+void CMapView::ChangeBtnColor()
+{
+	m_btn_Reset.SetTextColor(RGB(255, 255, 255));
+	m_btn_Reset.SetFaceColor(RGB(64, 64, 64));
 }
 
 BEGIN_MESSAGE_MAP(CMapView, CFormView)
+	ON_BN_CLICKED(IDC_MFCBUTTON1, &CMapView::OnBnClickedReset)
 END_MESSAGE_MAP()
 
 
@@ -63,6 +71,16 @@ void CMapView::OnInitialUpdate()
 {
 	CFormView::OnInitialUpdate();
 
-
+	ChangeBtnColor();
 	// TODO: 여기에 특수화된 코드를 추가 및/또는 기본 클래스를 호출합니다.
 }
+
+
+
+
+void CMapView::OnBnClickedReset()
+{
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+}
+
+
