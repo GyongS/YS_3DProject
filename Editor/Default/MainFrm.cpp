@@ -9,7 +9,6 @@
 #include "EditorView.h"
 #include "Inspector.h"
 #include "Hierarchy.h"
-#include "Project.h"
 #include "ShaderView.h"
 #include "ObjectListView.h"
 
@@ -102,7 +101,7 @@ BOOL CMainFrame::OnCreateClient(LPCREATESTRUCT lpcs, CCreateContext* pContext)
 	int iGapY = rcMainRect.bottom - rcView.top;
 
     SetWindowPos(nullptr,//순서를 바꿔서 생성하지 않겠다. nullptr을 넣어주게 되면. 
-		0, 0, VIEWCX + 850, VIEWCY , SWP_NOZORDER | SWP_NOMOVE);
+		0, 0, VIEWCX + 950, VIEWCY , SWP_NOZORDER | SWP_NOMOVE);
 
 	/*	
 	0, 0 | 0, 1 | 0, 2
@@ -115,8 +114,8 @@ BOOL CMainFrame::OnCreateClient(LPCREATESTRUCT lpcs, CCreateContext* pContext)
 
 	m_FirstSplitter.CreateStatic(&m_mainSplitter, 1, 2, WS_VISIBLE | WS_CHILD, m_mainSplitter.IdFromRowCol(0, 1));
 	m_FirstSplitter.CreateView(0, 0, RUNTIME_CLASS(CHierarchy), CSize(400, 300), pContext);
-	m_FirstSplitter.CreateView(0, 1, RUNTIME_CLASS(CInspector), CSize(400, 300), pContext);
-	m_FirstSplitter.SetColumnInfo(1, 300, 10);
+	m_FirstSplitter.CreateView(0, 1, RUNTIME_CLASS(CInspector), CSize(800, 300), pContext);
+	m_FirstSplitter.SetColumnInfo(1, 800, 10);
 
 
 

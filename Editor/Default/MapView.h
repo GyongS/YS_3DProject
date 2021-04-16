@@ -1,4 +1,5 @@
 #pragma once
+#include "afxbutton.h"
 
 
 
@@ -9,7 +10,7 @@ class CMapView : public CFormView
 	DECLARE_DYNCREATE(CMapView)
 
 public:
-	CMapView();           // 동적 만들기에 사용되는 protected 생성자입니다.
+	CMapView();           
 	virtual ~CMapView();
 
 public:
@@ -25,11 +26,14 @@ public:
 
 protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 지원입니다.
+	void ChangeBtnColor();
 
 	DECLARE_MESSAGE_MAP()
 public:
 	virtual BOOL Create(LPCTSTR lpszClassName, LPCTSTR lpszWindowName, DWORD dwStyle, const RECT& rect, CWnd* pParentWnd, UINT nID, CCreateContext* pContext = NULL);
 	virtual void OnInitialUpdate();
+	afx_msg void OnBnClickedReset();
+	CMFCButton m_btn_Reset;
 };
 
 
